@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wikipedia Viewer</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Search Wikipedia or go to a random article.">
+	<meta name="author" content="Justin Clagg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:800,500' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="../justinclagg.github.io/assets/css/project-footer.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+	<script type="text/javascript" src="./script.js" defer></script>
+</head>
+<body>
+	<div class="jumbotron text-center">
+		<h1>Wikipedia Viewer</h1>
+	</div>
+	<div class="container-fluid">
+		<!-- Search bar and buttons -->
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form id="search-form">
+					<div class="input-group">
+						<input class="form-control search-bar" type="text" name="search" placeholder="Search for..." aria-label="Search form">
+						<span class="input-group-btn">
+							<button class="btn btn-primary submitBtn" type="submit" aria-label="Search button">Go</button>
+							<button class="btn btn-default randomBtn" type="button" aria-label="Random article button">Random</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Search results -->
+		<div class="row">
+			<div class="result-area col-md-6 col-md-offset-3"></div>
+		</div>
+	</div>
+	<footer class="project-footer">
+		<p>Copyright © 2016 Justin Clagg</p>
+		<a href="http://www.justinclagg.com">Portfolio</a>
+		<a href="https://github.com/justinclagg/wikipedia-viewer" target="_blank">Source</a>
+	</footer>
+</body>
+</html>
